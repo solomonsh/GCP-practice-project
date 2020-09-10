@@ -1,16 +1,17 @@
 # Virtual Private Networks (VPN)
 ## Objectives
-    -In this lab, you learn how to perform the following tasks:
+    * In this lab, you learn how to perform the following tasks:
 
-    -Create VPN gateways in each network
+    * Create VPN gateways in each network
 
-    -Create VPN tunnels between the gateways
+    * Create VPN tunnels between the gateways
 
-    -Verify VPN connectivity
+    * Verify VPN connectivity
 
 ### Steps 
 #### Task 1 Explore the networks and instances
 1.1 Verify that vpn-network-1 and vpn-network-2 have been created with subnets in separate regions.
+
     list networks
     gcloud compute networks list
 
@@ -31,6 +32,7 @@
       gcloud compute firewall-rules list --filter network=vpn-network-2
 
 1.3 Explore the instances and their connectivity
+
     list VM instances
     gcloud compute instances list
 
@@ -86,19 +88,16 @@
 
 #### Task 3: Verify VPN connectivity
 3.1 Verify server-1 to server-2 connectivity
-
-  gcloud compute ssh --project qwiklabs-gcp-02-b18c42de434c  --zone us-central1-b server-1
-
-  To test connectivity to server-2's internal IP address
-  ping -c 3  10.1.3.2
+    gcloud compute ssh --project qwiklabs-gcp-02-b18c42de434c  --zone us-central1-b server-1
+    
+    To test connectivity to server-2's internal IP address
+        ping -c 3  10.1.3.2
+    exit
   
-  exit
-  
-  To test connectivity to server-1's internal IP address,
-  gcloud compute ssh --project qwiklabs-gcp-02-b18c42de434c  --zone europe-west1-b server-2
-  ping -c 3 10.5.4.2
-  
-  exit
+    To test connectivity to server-1's internal IP address,
+        gcloud compute ssh --project qwiklabs-gcp-02-b18c42de434c  --zone europe-west1-b server-2
+        ping -c 3 10.5.4.2
+    exit
 
  
   
