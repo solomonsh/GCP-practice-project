@@ -1,12 +1,12 @@
 # Virtual Private Networks (VPN)
 ## Objectives
-    * In this lab, you learn how to perform the following tasks:
+    > In this lab, you learn how to perform the following tasks:
 
-    * Create VPN gateways in each network
+    > Create VPN gateways in each network
 
-    * Create VPN tunnels between the gateways
+    > Create VPN tunnels between the gateways
 
-    * Verify VPN connectivity
+    > Verify VPN connectivity
 
 ### Steps 
 #### Task 1 Explore the networks and instances
